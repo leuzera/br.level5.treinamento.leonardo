@@ -89,3 +89,40 @@ header{
 #nav-menu li a:hover{
   background-color: : rgba(185, 60, 200, 0.9);
 }
+
+#conteudo{
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  height: 400px;
+  width: 900px;
+}
+
+.gigante{
+  width: 450px;
+  height: 400px;
+  order: 1;
+  background-color: rgb(45, 157, 26);
+}
+
+.grande{
+  width: 450px;
+  height: 200px;
+  order: 2;
+  background-color: rgb(102, 208, 76)
+}
+
+.medio{
+  width: 225px;
+  height: 200px;
+  order: 3;
+  background-color: rgb(12, 176, 3)
+}
+
+.pequeno{
+  order: 4;
+  width: 225px;
+  height: 100px;
+  background-color: rgb(30, 188, 231)
+}
