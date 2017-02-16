@@ -47,8 +47,9 @@ table {
 	border-spacing: 0;
 }
 /*===================== Fim do Reset ===========================*/
-
+/*======================== Header ==============================*/
 header{
+	position: relative;
   display: block;
 	height: 100px;
   background-color: rgba(0, 30, 85, 0.5);
@@ -56,7 +57,8 @@ header{
 
 .logo{
   float: left;
-  margin: 10px;
+  margin-top: 0.5%;
+	margin-left: 5%;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -89,7 +91,8 @@ header{
 #nav-menu li:hover{
   background-color: rgba(0, 30, 85, 1);
 }
-
+/*=================== Fim do Header ============================*/
+/*====================== Conteudo ==============================*/
 #conteudo{
 	width: 75%;
 	height: 400px;
@@ -135,4 +138,28 @@ header{
   width: 100%;
   height: 100px;
   background-color: rgb(30, 188, 231)
+}
+
+/*============================ media querys ===================================*/
+@media screen and (max-width: 850px){
+	#conteudo{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 620px){
+	.logo{
+		float: none;
+	  margin: 0.5% auto 0 auto;
+	}
+
+	#nav-menu{
+		float: none;
+		margin: 0 auto 0 auto;
+	}
+
+	#conteudo{
+		column-count: 1;
+		height: auto;
+	}
 }
