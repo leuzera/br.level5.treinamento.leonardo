@@ -91,42 +91,48 @@ header{
 }
 
 #conteudo{
-	position: relative;
-	border: 1px solid black;
+	width: 75%;
+	height: 400px;
   margin: auto;
   margin-top: 2%;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-	flex-wrap: wrap;
-  height: 405px;
-  width: 905px;
+	position: relative;
+	column-count: 2;
+	column-gap: 0;
+}
+
+.gigante .grande{
+	display: inline-block;
+	margin: 0;
+}
+
+#sub-cont{
+	width: 100%;
+  height: 200px;
+	position: relative;
+	column-count: 2;
+	column-gap: 0;
 }
 
 .gigante{
-  width: 50%;
-  min-height: 100%;
-  order: 1;
+  width: 100%;
+  height: 400px;
   background-color: rgb(45, 157, 26);
 }
 
 .grande{
-  width: 50%;
-  height: 50%;
-  order: 2;
+  width: 100%;
+  height: 200px;
   background-color: rgb(102, 208, 76)
 }
 
 .medio{
-  width: 25%;
-  height: 50%;
-  order: 3;
-  background-color: rgb(12, 176, 3)
+  width: 100%;
+  height: 200px;
+  background-color: rgb(12, 176, 3);
 }
 
 .pequeno{
-  order: 4;
-  width: 25%;
-  height: 25%;
+  width: 100%;
+  height: 100px;
   background-color: rgb(30, 188, 231)
 }
